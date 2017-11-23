@@ -1,0 +1,12 @@
+/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/bin/Release/netcoreapp2.0/GlaaCore.Web.deps.json
+/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/bin/Release/netcoreapp2.0/GlaaCore.Web.runtimeconfig.json
+/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/bin/Release/netcoreapp2.0/GlaaCore.Web.runtimeconfig.dev.json
+/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/bin/Release/netcoreapp2.0/GlaaCore.Web.dll
+/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/bin/Release/netcoreapp2.0/GlaaCore.Web.pdb
+/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/bin/Release/netcoreapp2.0/GlaaCore.Domain.dll
+/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/bin/Release/netcoreapp2.0/GlaaCore.Domain.pdb
+/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/obj/Release/netcoreapp2.0/GlaaCore.Web.csproj.CoreCompileInputs.cache
+/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/obj/Release/netcoreapp2.0/GlaaCore.Web.AssemblyInfoInputs.cache
+/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/obj/Release/netcoreapp2.0/GlaaCore.Web.AssemblyInfo.cs
+/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/obj/Release/netcoreapp2.0/GlaaCore.Web.dll
+/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/obj/Release/netcoreapp2.0/GlaaCore.Web.pdb

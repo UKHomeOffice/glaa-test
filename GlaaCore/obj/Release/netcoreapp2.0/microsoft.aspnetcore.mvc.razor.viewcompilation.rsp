@@ -1,0 +1,17 @@
+/home/ubuntu/GlaaCore/GlaaCore/GlaaCore
+--output-path=obj/Release/netcoreapp2.0/
+--application-name=GlaaCore.Web
+--content-root=/home/ubuntu/GlaaCore/GlaaCore/GlaaCore
+--file=/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/Views/Home/About.cshtml
+--file=/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/Views/Home/Contact.cshtml
+--file=/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/Views/Home/Index.cshtml
+--file=/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/Views/Licence/Create.cshtml
+--file=/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/Views/Licence/Delete.cshtml
+--file=/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/Views/Licence/Details.cshtml
+--file=/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/Views/Licence/Edit.cshtml
+--file=/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/Views/Licence/Index.cshtml
+--file=/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/Views/Shared/Error.cshtml
+--file=/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/Views/Shared/_Layout.cshtml
+--file=/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/Views/Shared/_ValidationScriptsPartial.cshtml
+--file=/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/Views/_ViewImports.cshtml
+--file=/home/ubuntu/GlaaCore/GlaaCore/GlaaCore/Views/_ViewStart.cshtml
