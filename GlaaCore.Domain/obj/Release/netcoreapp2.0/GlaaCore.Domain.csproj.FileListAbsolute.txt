@@ -1,8 +1,0 @@
-/home/ubuntu/GlaaCore/GlaaCore/GlaaCore.Domain/bin/Release/netcoreapp2.0/GlaaCore.Domain.deps.json
-/home/ubuntu/GlaaCore/GlaaCore/GlaaCore.Domain/bin/Release/netcoreapp2.0/GlaaCore.Domain.dll
-/home/ubuntu/GlaaCore/GlaaCore/GlaaCore.Domain/bin/Release/netcoreapp2.0/GlaaCore.Domain.pdb
-/home/ubuntu/GlaaCore/GlaaCore/GlaaCore.Domain/obj/Release/netcoreapp2.0/GlaaCore.Domain.csproj.CoreCompileInputs.cache
-/home/ubuntu/GlaaCore/GlaaCore/GlaaCore.Domain/obj/Release/netcoreapp2.0/GlaaCore.Domain.AssemblyInfoInputs.cache
-/home/ubuntu/GlaaCore/GlaaCore/GlaaCore.Domain/obj/Release/netcoreapp2.0/GlaaCore.Domain.AssemblyInfo.cs
-/home/ubuntu/GlaaCore/GlaaCore/GlaaCore.Domain/obj/Release/netcoreapp2.0/GlaaCore.Domain.dll
-/home/ubuntu/GlaaCore/GlaaCore/GlaaCore.Domain/obj/Release/netcoreapp2.0/GlaaCore.Domain.pdb
