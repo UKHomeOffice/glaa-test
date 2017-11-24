@@ -1,12 +1,10 @@
 FROM microsoft/dotnet:latest
 
-COPY . /app
-WORKDIR /app/GlaaCore
-RUN dotnet restore
+WORKDIR /app
 
-RUN dotnet publish -c Release -o out
+COPY ./GlaaCore/out .
 
 EXPOSE 5000
 
-ENTRYPOINT ["dotnet", "out/GlaaCore.Web.dll"]
+ENTRYPOINT ["dotnet", "GlaaCore.Web.dll"]
 
