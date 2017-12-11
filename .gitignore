@@ -2,3 +2,5 @@
 */[Oo]bj/
 GlaaCore/out/
 .vs/
+.kube
+*/out
