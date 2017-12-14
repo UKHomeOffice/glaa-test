@@ -23,7 +23,7 @@ namespace GlaaCore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var cs = "Data Source=glaatest.c5r6wqn6fr00.eu-west-2.rds.amazonaws.com;Initial Catalog=GLAA_Core;Integrated Security=False;User Id=GLAA;Password=YouMustBeLicensedToProvideLabour;MultipleActiveResultSets=True";
+            var cs = Configuration[Database:ConnectionString];
             services.AddMvc();
             services.AddDbContext<GlaaContext>(opt => opt.UseSqlServer(cs));
         }
@@ -31,6 +31,12 @@ namespace GlaaCore
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            var builder = new ConfigurationBuilder()
+              .SetBasePath(env.ContentRootPath)
+              .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+              .AddJsonFile("secrets/appsettings.secrets.json", options: true)
+              .AddEnvironmentVariables(); 
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

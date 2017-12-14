@@ -15,4 +15,17 @@ spec:
         image: quay.io/ukhomeofficedigital/glaa-db:latest
         imagePullPolicy: IfNotPresent
         ports:
-          - containerPort: 1433
+          - containerPort: 1433        
+        env:
+        - name: ACCEPT_EULA
+          value: "Y"
+        - name: SA_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: sa-pass
+              key: supersecret
+        resources:
+          limits:
+            memory: "4096Mi"
+          requests:
+            memory: "2048Mi"
