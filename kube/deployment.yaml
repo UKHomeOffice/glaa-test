@@ -16,3 +16,14 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
           - containerPort: 4000
+      env:
+        - name: DB_USER
+          valueFrom:
+            secretKeyRef:
+                name: db-user
+                key: supersecret          
+        - name: DB_PASS
+          valueFrom:
+            secretKeyRef:
+                name: db-pass
+                key: supersecret                

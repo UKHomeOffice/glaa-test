@@ -1,14 +1,14 @@
 USE [master]
 GO
 
-IF NOT EXISTS (SELECT [loginname] FROM [master].[dbo].[syslogins] WHERE [name] = 'GLAA')
+IF NOT EXISTS (SELECT [loginname] FROM [master].[dbo].[syslogins] WHERE [name] = '$(DB_USER)')
 BEGIN
-    CREATE LOGIN GLAA WITH PASSWORD = 'YouMustBeLicensedToProvideLabour';
+    CREATE LOGIN $(DB_USER) WITH PASSWORD = $(DB_PASS);
 END
 
-ALTER LOGIN [GLAA] ENABLE
+ALTER LOGIN [$(DB_USER)] ENABLE
 GO
-GRANT CONNECT SQL TO [GLAA]
+GRANT CONNECT SQL TO [$(DB_USER)]
 GO
 DROP DATABASE IF EXISTS GLAA_Core
 GO
@@ -18,9 +18,9 @@ GO
 USE [GLAA_Core]
 GO
 
-IF NOT EXISTS (SELECT [name] FROM [sys].[database_principals] WHERE [type] = 'S' AND [name] = 'GLAA')
+IF NOT EXISTS (SELECT [name] FROM [sys].[database_principals] WHERE [type] = 'S' AND [name] = '$(DB_USER)')
 BEGIN
-    CREATE USER [GLAA] FOR LOGIN [GLAA] WITH DEFAULT_SCHEMA = [dbo];
+    CREATE USER [$(DB_USER)] FOR LOGIN [$(DB_USER)] WITH DEFAULT_SCHEMA = [dbo];
 END
 
 GRANT ALTER ON SCHEMA::dbo TO [GLAA]
