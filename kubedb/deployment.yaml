@@ -24,6 +24,16 @@ spec:
             secretKeyRef:
               name: sa-pass
               key: supersecret
+        - name: DB_USER
+          valueFrom:
+            secretKeyRef:
+              name: db-secret
+              key: db_user
+        - name: DB_PASS
+          valueFrom:
+            secretKeyRef:
+              name: db-secret
+              key: db_pass
         resources:
           limits:
             memory: "4096Mi"
