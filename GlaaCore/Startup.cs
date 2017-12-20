@@ -25,7 +25,7 @@ namespace GlaaCore
         {
             var usr = Configuration["DB_USER"];
             var pwd = Configuration["DB_PASS"];
-            var cs = $"Data Source=glaa-test-db-servce.glaa-dev.svc.cluster.local,1433;Initial Catalog=GLAA_Core;Integrated Security=False;User Id={usr};Password={pwd};MultipleActiveResultsSets=True";
+            var cs = $"Data Source=glaa-test-db-service.glaa-dev.svc.cluster.local,1433;Initial Catalog=GLAA_Core;Integrated Security=False;User Id={usr};Password={pwd};MultipleActiveResultSets=True";
             services.AddMvc();
             services.AddDbContext<GlaaContext>(opt => opt.UseSqlServer(cs));
         }
