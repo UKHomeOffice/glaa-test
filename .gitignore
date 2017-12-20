@@ -4,3 +4,5 @@ GlaaCore/out/
 .vs/
 .kube
 */out
+.vscode/launch.json
+.vscode/tasks.json
