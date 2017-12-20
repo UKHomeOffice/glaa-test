@@ -3,9 +3,11 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: glaa-test-ingress
+  annotations:
+    kubernetes.io/ingress.allow-http: "true"
 spec:
   rules:
-  - host: glaa-test.notprod.glaa.homeoffice.gov.uk
+  - host: glaa-web.notprod.glaa.homeoffice.gov.uk
     http:
       paths:
       - backend:

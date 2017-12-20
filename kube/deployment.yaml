@@ -15,7 +15,7 @@ spec:
         image: quay.io/ukhomeofficedigital/glaa-web:latest
         imagePullPolicy: IfNotPresent
         ports:
-          - containerPort: 4000
+          - containerPort: 80
         env:
           - name: DB_USER
             valueFrom:
