@@ -18,14 +18,15 @@ namespace GlaaCore
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        public IConfiguration Configuration { get; private set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var usr = Configuration["DB_USER"];
-            var pwd = Configuration["DB_PASS"];
+            var usr = Environment.GetEnvironmentVariable("DB_USER");
+            var pwd = Environment.GetEnvironmentVariable("DB_PASS");
             var cs = $"Data Source=glaa-test-db-service.glaa-dev.svc.cluster.local,1433;Initial Catalog=GLAA_Core;Integrated Security=False;User Id={usr};Password={pwd};MultipleActiveResultSets=True";
+
             services.AddMvc();
             services.AddDbContext<GlaaContext>(opt => opt.UseSqlServer(cs));
         }
@@ -36,7 +37,8 @@ namespace GlaaCore
             var builder = new ConfigurationBuilder()
               .SetBasePath(env.ContentRootPath)
               .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-              .AddEnvironmentVariables(); 
+              .AddEnvironmentVariables();
+            Configuration = builder.Build();
 
             if (env.IsDevelopment())
             {
