@@ -6,7 +6,8 @@ pipeline:
     environment:
       - DOCKER_HOST=tcp://127.0.0.1:2375
     commands:
-      - docker build -t glaa-test .
+      - docker build -t glaa-web .
+      - docker build -t glaa-db kubedb/
     when:
       branch: master
       event: push
