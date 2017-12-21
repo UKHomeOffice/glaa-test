@@ -6,6 +6,7 @@ pipeline:
     environment:
       - DOCKER_HOST=tcp://127.0.0.1:2375
     commands:
+      - ./build.sh
       - docker build -t glaa-web .
       - docker build -t glaa-db kubedb/
     when:
@@ -28,7 +29,7 @@ pipeline:
 
 services:
   dind:
-    image: docker:1.11-dind
+    image: microsoft/dotnet:sdk
     privileged: true
     command:
       - "-s"
