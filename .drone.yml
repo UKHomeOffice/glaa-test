@@ -16,10 +16,10 @@ pipeline:
     environment:
       - DOCKER_HOST=tcp://127.0.0.1:2375
     commands:
-      - docker login -u="ukhomeofficedigital+glaa-web" -p=${DOCKER_PASSWORD} quay.io
+      - docker login -u="ukhomeofficedigital+glaa" -p=${DOCKER_PASSWORD} quay.io
       - docker tag glaa-web quay.io/ukhomeofficedigital/glaa-web:${DRONE_COMMIT_SHA}
       - docker push quay.io/ukhomeofficedigital/glaa-web:${DRONE_COMMIT_SHA}
-      - docker login -u="ukhomeofficedigital+glaa-test" -p=${DOCKER_PASSWORD} quay.io
+      - docker login -u="ukhomeofficedigital+glaa" -p=${DOCKER_PASSWORD} quay.io
       - docker tag glaa-db quay.io/ukhomeofficedigital/glaa-db:${DRONE_COMMIT_SHA}
       - docker push quay.io/ukhomeofficedigital/glaa-db:${DRONE_COMMIT_SHA}
     when:
