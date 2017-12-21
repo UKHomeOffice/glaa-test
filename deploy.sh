@@ -7,7 +7,6 @@ export KUBE_NAMESPACE=glaa-dev
 export KUBE_SERVER=${KUBE_SERVER_DSP_NOTPROD}
 export KUBE_TOKEN=${KUBE_TOKEN_DSP_NOTPROD}
 
-cd kube
 kd --insecure-skip-tls-verify \
    --file kubedb/sa-secret.yaml \
    --file kubedb/db-secret.yaml \
