@@ -28,9 +28,6 @@ pipeline:
       event: push
   deploy_to_not_prod:
     image: quay.io/ukhomeofficedigital/kd:v0.3.1
-    secrets:
-      - kube_server_dsp_notprod
-      - kube_token_dsp_notprod
     commands:
       - ./deploy.sh
     when:
